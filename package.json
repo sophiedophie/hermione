@@ -1,0 +1,28 @@
+{
+  "name": "hermione",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^14.5.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "routes": "^2.1.0",
+    "styled-components": "^5.0.0-beta.8",
+    "styled-icons": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "jest-styled-components": "^6.3.3",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.3"
+  }
+}
