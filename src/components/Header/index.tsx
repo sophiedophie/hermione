@@ -1,25 +1,30 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import { Navbar, Alignment, Button, Popover } from '@blueprintjs/core'; 
+import Menu from '../Menu';
+import './index.scss';
 
 interface Props {
   children?: any;
+  loginModal?: any;
 }
 
-const Header = styled.div`
-  font-size: 1.5em;
-  // text-align: center;
-  color: palevioletred;
-`;
-
-const Wrapper = styled.section`
-  padding: 3em;
-  background: papayawhip;
-`;
+const className = 'bp3-minimal';
 
 export default (props) => (
-  <Wrapper>
-    <Header>
-      {props.children}
-    </Header>
-  </Wrapper>
+  <Navbar>
+    <Navbar.Group className='align-flex'>
+        <Navbar.Heading>Hermione</Navbar.Heading>
+        <Navbar.Divider />
+        <div className="bp3-input-group .modifier">
+          <span className="bp3-icon bp3-icon-search"></span>
+          <input type="text" className="bp3-input" placeholder="Search" />
+          <button className="bp3-button bp3-minimal bp3-intent-primary bp3-icon-arrow-right" ></button>
+        </div>
+        <div className='margin-left-auto'>
+          <Popover content={<Menu />}>
+            <Button className={className} icon="log-in" text="Login" />
+          </Popover>
+        </div>
+    </Navbar.Group>
+</Navbar>
 );

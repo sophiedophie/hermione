@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@blueprintjs/core": "^3.18.1",
     "graphql": "^14.5.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -23,6 +24,7 @@
     "@types/react-dom": "^16.9.0",
     "jest-styled-components": "^6.3.3",
     "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.12",
     "typescript": "^3.5.3"
   }
 }
